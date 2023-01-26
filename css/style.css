@@ -7,6 +7,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body{
@@ -27,8 +29,14 @@ header{
       COMMON
 -------------------
 */
+footer i{
+    margin-left: 10px;
+}
+i, span:hover{
+    cursor: pointer;
+}
 .photos > span{
-    color: white;
+    color: #fffffe;
     background-color: #000000;
     opacity: 0.4;
     position: absolute;
@@ -37,21 +45,27 @@ header{
     font-weight: 700;
 }
 button > span{
-    color: white;
+    color: #fffffe;
     font-size: 17;
     font-weight: 700;
-}
-
-i{
-    color: white;
 }
 
 .left, .center{
     font-size: 30px;
 }
+.left :nth-child(even){
+    font-size: 15px;
+}
+.right > span{
+    color: #f12532;
+}
 
-.right >span{
-    color: red;
+.center :nth-child(5){
+    font-size: 15px;
+}
+
+.center :nth-child(4){
+    color: #4ac700;
 }
 
 /*
@@ -122,5 +136,12 @@ button{
 .right{
     background-color: #4a4a4a;
     padding: 10px;
+    font-weight: 700;
+}
+
+footer button{
+    color: #fffffe;
+    background-color: transparent;
+    font-size: 100%;
 }
 

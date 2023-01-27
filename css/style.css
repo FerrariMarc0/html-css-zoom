@@ -37,9 +37,9 @@ i, span:hover{
 }
 .photos > span{
     color: #fffffe;
-    background-color: #000000;
-    opacity: 0.4;
+    background-color: rgba(0, 0, 0, 0.3);
     position: absolute;
+    left: 0;
     bottom: 0;
     padding: 5px;
     font-weight: 700;
@@ -51,7 +51,7 @@ button > span{
 }
 
 .left, .center{
-    font-size: 30px;
+    font-size: 20px;
 }
 .left :nth-child(even){
     font-size: 15px;
@@ -76,10 +76,10 @@ button > span{
 .container{
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px 10px;
     margin: 60px auto 20px;
     height: 100vh;
-    width: 90%;
+    width: 90vw;
     align-items: center;
     justify-content: center;
     padding: 20px;
@@ -88,6 +88,7 @@ button > span{
 img{
     height: 100%;
     width: 100%;
+    display: block;
 }
 
 .options{
@@ -139,9 +140,18 @@ button{
     font-weight: 700;
 }
 
+.left, .center{
+    display: flex;
+    align-items: center;
+}
+
 footer button{
     color: #fffffe;
     background-color: transparent;
     font-size: 100%;
 }
 
+button div{
+    font-size: 12px;
+    padding: 5px;
+}
